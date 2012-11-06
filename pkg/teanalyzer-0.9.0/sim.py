@@ -31,10 +31,16 @@ def emulate(text)
   a = Tuple.from_text(text)
   firstChar = a[0].keys(lambda { |k| k.chars[0] })[0]
   a = a.unshift(Tuple.new(firstChar,firstChar))
-  a.each{ |x|
-    sleep((x.effort * 225) * 0.0001)
-    puts x.keys(lambda { |k| k.chars[0] })[1]
-  }
+  text.split("").each do |ch| 
+    delay = 70
+    if ch != ' '
+      x = a.shift
+      delay = x.effort * 250
+    end
+    delay = delay + rand * 10
+    sleep(delay * 0.0001)
+    puts ch 
+  end
 end
 
 emulate("hello, how are you?")
