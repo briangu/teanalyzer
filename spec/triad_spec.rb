@@ -396,6 +396,7 @@ describe 'Triad' do
       specify { Triad.new('f', 't', 'g').path_effort.to_s.should be==(5.0).to_s }
       specify { Triad.new('b', 'e', 'b').path_effort.to_s.should be==(5.3).to_s }
     end
+=begin
     describe 'all key combinations' do
       it 'should return a number', :slow => true do
         keys = Keyboard.keys
@@ -412,6 +413,7 @@ describe 'Triad' do
         end
       end
     end
+=end
   end
   describe 'effort' do
     it 'should add up effort components' do

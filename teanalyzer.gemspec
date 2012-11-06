@@ -1,22 +1,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{teanalyzer}
-  s.version = "0.9.3"
+  s.name = "teanalyzer"
+  s.version = "0.9.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Jorg Jenni}]
-  s.date = %q{2011-06-07}
-  s.description = %q{An analyzer for keyboard typing efforts}
-  s.email = %q{jorg.jenni@jennius.co.uk}
-  s.extra_rdoc_files = [%q{README}, %q{lib/core/finger_parameters.rb}, %q{lib/core/hand_parameters.rb}, %q{lib/core/hands_parameters.rb}, %q{lib/core/key.rb}, %q{lib/core/keyboard.rb}, %q{lib/core/rows_parameters.rb}, %q{lib/core/triad.rb}, %q{lib/keyboards/uk-keyboard}, %q{lib/parameters.rb}, %q{lib/teanalyzer.rb}]
-  s.files = [%q{Gemfile}, %q{Gemfile.lock}, %q{HOWTO}, %q{Manifest}, %q{README}, %q{Rakefile}, %q{lib/core/finger_parameters.rb}, %q{lib/core/hand_parameters.rb}, %q{lib/core/hands_parameters.rb}, %q{lib/core/key.rb}, %q{lib/core/keyboard.rb}, %q{lib/core/rows_parameters.rb}, %q{lib/core/triad.rb}, %q{lib/keyboards/uk-keyboard}, %q{lib/parameters.rb}, %q{lib/teanalyzer.rb}, %q{spec/hand_parameters_spec.rb}, %q{spec/key_spec.rb}, %q{spec/keyboard_spec.rb}, %q{spec/teanalyzer_spec.rb}, %q{spec/triad_spec.rb}, %q{teanalyzer.gemspec}]
-  s.homepage = %q{https://github.com/Enceradeira/teanalyzer}
-  s.rdoc_options = [%q{--line-numbers}, %q{--inline-source}, %q{--title}, %q{Teanalyzer}, %q{--main}, %q{README}]
-  s.require_paths = [%q{lib}]
-  s.rubyforge_project = %q{teanalyzer}
-  s.rubygems_version = %q{1.8.5}
-  s.summary = %q{An analyzer for keyboard typing efforts}
+  s.authors = ["Jorg Jenni"]
+  s.date = "2012-11-06"
+  s.description = "An analyzer for keyboard typing efforts"
+  s.email = "jorg.jenni@jennius.co.uk"
+  s.extra_rdoc_files = ["README", "lib/core/finger_parameters.rb", "lib/core/hand_parameters.rb", "lib/core/hands_parameters.rb", "lib/core/key.rb", "lib/core/keyboard.rb", "lib/core/rows_parameters.rb", "lib/core/triad.rb", "lib/core/tuple.rb", "lib/keyboards/uk-keyboard", "lib/parameters.rb", "lib/teanalyzer.rb"]
+  s.files = ["Gemfile", "Gemfile.lock", "HOWTO", "Manifest", "README", "Rakefile", "aliceinwonderland.txt", "lib/core/finger_parameters.rb", "lib/core/hand_parameters.rb", "lib/core/hands_parameters.rb", "lib/core/key.rb", "lib/core/keyboard.rb", "lib/core/rows_parameters.rb", "lib/core/triad.rb", "lib/core/tuple.rb", "lib/keyboards/uk-keyboard", "lib/parameters.rb", "lib/teanalyzer.rb", "sim.py", "spec/hand_parameters_spec.rb", "spec/key_spec.rb", "spec/keyboard_spec.rb", "spec/teanalyzer_spec.rb", "spec/triad_spec.rb", "timing.rb", "teanalyzer.gemspec"]
+  s.homepage = "https://github.com/Enceradeira/teanalyzer"
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Teanalyzer", "--main", "README"]
+  s.require_paths = ["lib"]
+  s.rubyforge_project = "teanalyzer"
+  s.rubygems_version = "1.8.24"
+  s.summary = "An analyzer for keyboard typing efforts"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

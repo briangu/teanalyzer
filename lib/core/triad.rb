@@ -2,7 +2,6 @@ require File.expand_path('./../keyboard', __FILE__)
 
 
 class Triad
-  private
   def alternating_hand?
     keys_hand { |h1, h2, h3| h1!=h2 && h2 != h3 }
   end
