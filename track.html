@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="json2.js" type="text/javascript"></script>
+</head>
+<body>
+<script>
+var time = [];
+var lastTime = new Date()
+document.onkeydown =
+  function(e) {
+    var arr = {
+      'time': e.timeStamp - lastTime, 
+      'key': e.keyCode
+    }
+    time.push(arr)
+    window.console.info(JSON.stringify(arr))
+    lastTime = e.timeStamp
+  };
+</script>
+</body>
+</html>
