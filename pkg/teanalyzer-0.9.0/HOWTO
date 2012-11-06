@@ -1,0 +1,5 @@
+update gem version:
+    - update manifest: rake manifest
+    - rake build_gemspec
+    - set version in teanalyzer.gemspec
+    - build gem: gem build teanalyzer.gemspec
